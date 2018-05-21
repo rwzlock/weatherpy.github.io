@@ -1,0 +1,84 @@
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Latitude vs. Humidity</title>
+          
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!--Can define multiple screen size settings in a single column--> <!--See Class 3 Make Interactive-->
+        <div class="row" style=height:40px;background-color:white>
+          <div class="col-md-12">
+              <a class="link" href="index.html" style=color:white;background-color:lightseagreen;height:40px;font-size:38px;padding:10px;>
+                  <strong>Latitude</strong>
+              </a>
+              <span class="pull-right">
+                  <div class="dropdown" style=display:inline-block>
+                      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                          <li><a href="image1.html">Latitude vs. Temperature</a></li>
+                          <li><a href="image2.html">Latitude vs. Cloudiness</a></li>
+                          <li><a href="image3.html">Latitude vs. Wind Speed</a></li>
+                          <li><a href="image4.html">Latitude vs. Humidity</a></li>
+                      </ul>
+                  </div>
+                  <a class="link" href="comppage.html" style=padding:10px>Comparisons</a>
+                  <a class="link" href="datapage.html" style=padding:10px>Data</a> 
+              </span>
+          </div>
+        </div>
+
+        <div class="row" style=padding:10px;>
+            <div class="col-md-6 col-sm-12" style=background-color:white>
+              <h2 style=text-align:left>
+                City Latitude vs. Humidity
+              </h2>
+              <img src="Resources/image4.png" alt="Latitude vs. Humidity">
+              <p> 
+                  This graph shows Latitude vs. Humidity for the given date. There is no correlation between Latitude and Humidity, indicating that it is
+                  unlikely that humidity could be the factor influencing temperature.
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12" style=background-color:white;>
+                    <h2>
+                      Visualizations
+                    </h2>
+                    
+                    <div class="row" style=padding:10px;>
+                        <div class="col-md-3 col-sm-6">
+                            <a class="link" href="image1.html">
+                                <img src="Resources/image1.png" alt="Latitude vs. Temperature">
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <a class="link" href="image3.html">
+                                    <img src="Resources/image3.png" alt="Latitude vs. Wind Speed">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style=padding:10px;>
+                        <div class="col-md-3 col-sm-6">
+                            <a class="link" href="image2.html">
+                                <img src="Resources/image2.png" alt="Latitude vs. Cloudiness">
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <a class="link" href="image4.html">
+                                <img src="Resources/image4.png" alt="Latitude vs. Humidity">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

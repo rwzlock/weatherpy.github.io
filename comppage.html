@@ -1,0 +1,77 @@
+<html lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Comparisons Page</title>
+          
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!--Can define multiple screen size settings in a single column--> <!--See Class 3 Make Interactive-->
+        <div class="row" style=height:40px;background-color:white>
+          <div class="col-md-12">
+              <a class="link" href="index.html" style=color:white;background-color:lightseagreen;height:40px;font-size:38px;padding:10px;>
+                  <strong>Latitude</strong>
+              </a>
+              <span class="pull-right">
+                  <div class="dropdown" style=display:inline-block>
+                      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                          <li><a href="image1.html">Latitude vs. Temperature</a></li>
+                          <li><a href="image2.html">Latitude vs. Cloudiness</a></li>
+                          <li><a href="image3.html">Latitude vs. Wind Speed</a></li>
+                          <li><a href="image4.html">Latitude vs. Humidity</a></li>
+                      </ul>
+                  </div>
+                  <a class="link" href="comppage.html" style=padding:10px>Comparisons</a>
+                  <a class="link" href="datapage.html" style=padding:10px>Data</a> 
+              </span>
+          </div>
+        </div>
+        <div class="row" style=padding:10px;>
+            <div class="col-md-12">
+              <h2>Latitude vs. X</h2>
+              <p>Click any graph for detailed analysis.</p>
+            </div>
+        </div>
+
+        <div class="row" style=padding:10px;>
+            <div class="col-md-6 col-sm-12">
+                <h3>Latitude vs. Temperature</h3>
+                <a class="link" href="image1.html">
+                    <img src="Resources/image1.png" alt="Latitude vs. Temperature">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3>Latitude vs. Wind Speed</h3>
+                <a class="link" href="image3.html">
+                        <img src="Resources/image3.png" alt="Latitude vs. Wind Speed">
+                </a>
+            </div>
+        </div>
+        <div class="row" style=padding:10px;>
+            <div class="col-md-6 col-sm-12">
+                <h3>Latitude vs. Cloudiness</h3>
+                <a class="link" href="image2.html">
+                    <img src="Resources/image2.png" alt="Latitude vs. Cloudiness">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3>Latitude vs. Humidity</h3>
+                <a class="link" href="image4.html">
+                    <img src="Resources/image4.png" alt="Latitude vs. Humidity">
+                </a>
+            </div>
+        </div>
+
+      </body>
+</html>
